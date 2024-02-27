@@ -13,8 +13,36 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <header>
-        
+    <header class="container-fluid">
+            <div class="row h-100">
+                <div class="col-2 d-flex text-center align-items-center justify-content-center"> <!-- Colonna con i loghi-->
+                    <img class="ms-mobile-logo" src="./img/mobile-logo.png" alt="">
+                    <img class="ms-full-logo" src="./img/logo.svg" alt="">
+                </div>
+                <div class="col-8 d-flex align-items-center">
+                    <div class="input-group">
+                        <span class="input-group-text ms-search" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control ms-search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                    <ul class="d-flex align-items-center pt-2">
+                        <li class="d-none d-lg-block"><i class="fa-solid fa-list"></i></li>
+                        <li class="d-none d-lg-block"><i class="fa-solid fa-circle-question"></i></li>
+                        <li class="d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        <li class="ms-yellow-text">
+                            <div class="dropdown">
+                                <i class="fa-solid fa-bell dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
 
     <div class="ms-wrapper d-flex">

@@ -1,4 +1,12 @@
 /*---------------
+    GENERAL
+---------------*/
+
+img{
+    max-width: 100%;
+}
+
+/*---------------
     HEADER
 ---------------*/
 
@@ -7,6 +15,38 @@ header{
     background-color: aquamarine;
 }
 
+.ms-mobile-logo{
+    max-width: 50px;
+}
+
+.ms-full-logo{
+    display: none;
+}
+
+.ms-form-width{
+    max-width: 700px;
+}
+
+.ms-bg-lightgrey{
+    background-color: #e5e5e5;
+}
+
+.ms-search{
+    border: 0;
+    background-color: #E5E5E5;
+}
+header ul{
+    list-style: none;
+    gap: 20px;
+}
+
+header ul li{
+    color: #5b5858;
+}
+
+.ms-yellow-text{
+    color: #ff8f00;
+}
 /*---------------
     WRAPPER
 ---------------*/
@@ -34,4 +74,40 @@ main{
     height: calc(100vh - 90px);
     background-color: red;
     flex-grow: 1;
+}
+
+/*---------------
+    RESPONSIVE
+---------------*/
+
+/*--------- SM ---------*/
+
+@media screen and (min-width: 576px) {
+    
+}
+
+/*--------- MD ---------*/
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/*--------- LG ---------*/
+
+@media screen and (min-width: 992px) {
+    
+    .ms-mobile-logo{
+        display: none;
+    }
+
+    .ms-full-logo{
+        display: block;
+    }
+
+}
+
+/*--------- XL ---------*/
+
+@media screen and (min-width: 1200px) {
+    
 }
