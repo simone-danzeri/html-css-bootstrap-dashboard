@@ -92,6 +92,7 @@ header ul li{
 
 aside{
     width: 100px;
+    flex-shrink: 0;
     height: calc(100vh - 90px);
     background-color: #051e34;
     background-image: url(./img/sidebar-bg.png);
@@ -111,7 +112,6 @@ aside ul li{
 
 main{
     height: calc(100vh - 90px);
-    background-color: red;
     flex-grow: 1;
 }
 
@@ -126,6 +126,8 @@ main{
 
 .ms-main-container{
     width: 100%;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
 }
 
 .ms-badge{
