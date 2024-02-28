@@ -106,6 +106,10 @@ aside ul{
 aside ul li{
     padding: 10px 0px;
 }
+
+aside ul li:hover{
+    color: #ff8f00;
+}
 /*---------------
     MAIN
 ---------------*/
