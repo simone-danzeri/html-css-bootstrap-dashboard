@@ -61,7 +61,7 @@
                 </ul>
             </div>
             <div class="d-flex justify-content-center"> <!-- Contenitore con Admin-->
-                <ul class="text-white fs-4">
+                <ul class="text-white fs-5">
                     <li>
                         <i class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline ps-3">Admin</span>
                     </li>
@@ -70,42 +70,229 @@
         </aside>
 
         <main class="d-flex">
-            <section id="control-center" class="container-fluid pt-4"> <!-- Sezione azzurra-->
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-4 col-xl-2 pt-2 order-md-3">
-                        <span class="text-white pe-3">Nuovo Studente</span>
-                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="text-white fa-solid fa-plus"></i></button>
+            <div class="ms-main-container">
+                <section id="control-center" class="container-fluid pt-4"> <!-- Sezione azzurra-->
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-4 col-xl-2 pt-2 order-md-3">
+                            <span class="text-white pe-3">Nuovo Studente</span>
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="text-white fa-solid fa-plus"></i></button>
 
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body"> <!-- Form da inserire-->
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                    
+                                    <div class="col-12 col-sm-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                    
+                                    <div class="col-12 col-sm-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Mail</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    </div>
+                    
+                                    <div class="col-12 col-sm-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                    
+                                    <div class="col-12 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                    
+                                    <div class="col-12 col-sm-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Città</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                    
+                                    <div class="col-12 col-sm-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Stato</label>
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="inputGroupSelect02">
+                                        <option selected="">Scegli...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="col-12 col-sm-2 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">CAP</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                    
+                                    <div class="col-12">
+                                    <label for="exampleFormControlInput1" class="form-label">Foto</label>
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    </div>
+                                    </div>
+                    
+                                    <div class="col-12 py-4">
+                                    <input type="checkbox" class="me-2" name="" id="">Seleziona per proseguire
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                    <input type="button" value="Svuota" class="ms-btn ms-btn-clean">
+                                    <input type="button" value="Salva" class="ms-btn ms-btn-save">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                        <div class="offcanvas-body">
-                            ...
+                        <div class="col-12 col-md-4 my-4 my-md-0">
+                            <div class="d-flex align-items-center">
+                                <h2 class="text-white pe-2"><strong>Boolean</strong></h2>
+                                <span class="badge ms-badge">Piano blaze</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="badge ms-badge">3 app</span>
+                                <span class="text-white px-2"><i class="fa-solid fa-angles-right"></i></span>
+                                <span class="badge ms-badge d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                                <span class="badge ms-badge d-none d-lg-inline">Piano blaze</span>
+                                <span class="badge ms-badge mx-2 d-none d-lg-inline">Piano blaze</span>
+                                <span class="badge ms-badge d-none d-lg-inline">Piano blaze</span>
+                            </div>
                         </div>
+                        <div class="col-12 col-md-4">
+                            <div class="text-white">Studenti online negli ultimi 30 minuti</div>
+                            <div class="text-white fs-3">125</div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 my-4 my-md-0">
-                        <div class="d-flex align-items-center">
-                            <h2 class="text-white pe-2"><strong>Boolean</strong></h2>
-                            <span class="badge ms-badge">Piano blaze</span>
+                </section>
+
+                <section class="container-fluid"> <!-- Sezione con le card-->
+                    <div class="row">
+                        <div class="col-12 col-lg-8"> <!-- Colonna di sinistra-->
+                            <div class="card">
+                                <div class="card-header"><h5>Prossime Classi</h5></div>
+                                <div class="container-fluid">
+                                  <table class="table table-hover text-center">
+                                  <thead >
+                                    <tr>
+                                      <th class="ms-name-th fw-normal text-start" scope="col">Nome</th>
+                                      <th class="ms-date-th fw-normal" scope="col">Data di inizio</th>
+                                      <th class="ms-roi-th fw-normal" scope="col">ROI</th>
+                                      <th class="ms-state-th fw-normal" scope="col">Stato</th>
+                                      <th class="ms-action-th fw-normal" scope="col">Azioni
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 75</th>
+                                      <td>15 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-success">done</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 76</th>
+                                      <td>16 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-success">done</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 77</th>
+                                      <td>17 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-warning">process</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 78</th>
+                                      <td>18 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-success">done</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 79</th>
+                                      <td>19 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-danger">failed</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 80</th>
+                                      <td>20 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-success">done</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 81</th>
+                                      <td>21 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-danger">failed</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe 82</th>
+                                      <td>22 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-success">done</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th class="fw-normal text-start" scope="row"> <img src="img/class-avatar.jpg"> Classe75</th>
+                                      <td>16 Feb 2021</td>
+                                      <td>20%</td>
+                                      <td><span class="badge text-bg-danger">failed</span></td>
+                                      <td>
+                                        <button class="ms-btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="ms-btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                </div>
+                              </div>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <span class="badge ms-badge">3 app</span>
-                            <span class="text-white px-2"><i class="fa-solid fa-angles-right"></i></span>
-                            <span class="badge ms-badge d-lg-none"><i class="fa-solid fa-plus"></i></span>
-                            <span class="badge ms-badge d-none d-lg-inline">Piano blaze</span>
-                            <span class="badge ms-badge mx-2 d-none d-lg-inline">Piano blaze</span>
-                            <span class="badge ms-badge d-none d-lg-inline">Piano blaze</span>
+                        <div class="col"> <!-- Colonna di destra-->
+
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <div class="text-white">Studenti online negli ultimi 30 minuti</div>
-                        <div class="text-white fs-3">125</div>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
     </div>
     <!-- Bootstrap JS-->

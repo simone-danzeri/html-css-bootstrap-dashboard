@@ -7,6 +7,37 @@ img{
 }
 
 /*---------------
+    BUTTONS
+---------------*/
+
+.ms-btn{
+    width: auto;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.ms-btn-clean{
+    background-color: #0D6DFD;
+    color: white;
+}
+
+.ms-btn-save{
+    background-color: #FFC107;
+}
+
+.ms-btn-trash, .ms-btn-edit{
+    border: rgb(156, 156, 156) 2px solid;
+    background-color: transparent;
+}
+
+.ms-btn-trash i, .ms-btn-edit i{
+    filter: opacity(0.4);
+}
+
+/*---------------
     HEADER
 ---------------*/
 
@@ -90,12 +121,49 @@ main{
 
 #control-center{
     background-color: #1b72e8;
+    padding-bottom: 50px;
+}
+
+.ms-main-container{
+    width: 100%;
 }
 
 .ms-badge{
     background-color: #165bba;
     border-radius: 20px;
 }
+
+/*---------------
+    TABLE
+---------------*/
+
+th img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.ms-fs-icon{
+    font-size: 24px;
+}
+
+.ms-name-th{
+    width: 50%;
+}
+
+.ms-state-th, .ms-action-th{
+    width: 25%;
+}
+
+.ms-date-th, .ms-roi-th{
+    display: none;
+}
+
+tbody tr td:nth-child(2), tbody tr td:nth-child(3){
+    display: none;
+}
+
+
+
 
 /*---------------
     RESPONSIVE
@@ -110,6 +178,18 @@ main{
 /*--------- MD ---------*/
 
 @media screen and (min-width: 768px) {
+
+    .ms-name-th{
+        width: 40%;
+    }
+    
+    .ms-date-th, .ms-action-th, .ms-state-th, .ms-roi-th{
+        width: 15%;
+    }
+
+    .ms-date-th, .ms-roi-th, tbody tr td:nth-child(2), tbody tr td:nth-child(3){
+        display: table-cell;
+    }
 
 }
 
@@ -128,6 +208,23 @@ main{
     aside{
         width: 150px;
     }
+
+    .ms-name-th{
+        width: 55%;
+    }
+
+    .ms-date-th, .ms-action-th{
+        width: 15%;
+    }
+
+    .ms-state-th{
+        width: 10%;
+    }
+
+    .ms-roi-th{
+        width: 5%;
+    }
+    
 }
 
 /*--------- XL ---------*/
