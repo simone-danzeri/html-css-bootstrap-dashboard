@@ -12,7 +12,6 @@ img{
 
 header{
     height: 90px;
-    background-color: aquamarine;
 }
 
 .ms-mobile-logo{
@@ -21,6 +20,7 @@ header{
 
 .ms-full-logo{
     display: none;
+    
 }
 
 .ms-form-width{
@@ -60,7 +60,7 @@ header ul li{
 ---------------*/
 
 aside{
-    width: 120px;
+    width: 100px;
     height: calc(100vh - 90px);
     background-color: #051e34;
     background-image: url(./img/sidebar-bg.png);
@@ -126,7 +126,7 @@ main{
     }
 
     aside{
-        width: 250px;
+        width: 150px;
     }
 }
 
