@@ -135,6 +135,10 @@ main{
     border-radius: 20px;
 }
 
+.ms-oc-width{
+    width: 75% !important;
+}
+
 /*---------------
     TABLE
 ---------------*/
@@ -181,6 +185,10 @@ tbody tr td:nth-child(2), tbody tr td:nth-child(3){
 
 @media screen and (min-width: 768px) {
 
+    .ms-oc-width{
+        width: 75% !important;
+    }
+
     .ms-name-th{
         width: 40%;
     }
@@ -211,6 +219,10 @@ tbody tr td:nth-child(2), tbody tr td:nth-child(3){
         width: 150px;
     }
 
+    .ms-oc-width{
+        width: 60% !important;
+    }
+
     .ms-name-th{
         width: 55%;
     }
@@ -233,4 +245,5 @@ tbody tr td:nth-child(2), tbody tr td:nth-child(3){
 
 @media screen and (min-width: 1200px) {
     
+
 }
