@@ -139,10 +139,6 @@ main{
     border-radius: 20px;
 }
 
-.ms-oc-width{
-    width: 75% !important;
-}
-
 /*---------------
     TABLE
 ---------------*/
@@ -188,7 +184,7 @@ tbody tr td:nth-child(2), tbody tr td:nth-child(3){
 @media screen and (min-width: 768px) {
 
     .ms-oc-width{
-        width: 75% !important;
+        width: 50% !important;
     }
 
     .ms-name-th{
@@ -219,10 +215,6 @@ tbody tr td:nth-child(2), tbody tr td:nth-child(3){
 
     aside{
         width: 150px;
-    }
-
-    .ms-oc-width{
-        width: 60% !important;
     }
 
     .ms-name-th{
