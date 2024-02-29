@@ -108,7 +108,7 @@ aside ul li{
 }
 
 aside ul li:hover{
-    color: #ff8f00;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 /*---------------
     MAIN
